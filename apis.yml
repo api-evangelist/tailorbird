@@ -1,7 +1,29 @@
 aid: tailorbird
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tailorbird.png
 name: Tailorbird
-description: Tailorbird is a company surfaced as a portfolio company of bloomberg-beta and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Tailorbird is a CapEx orchestration platform for the multifamily real estate
+  industry, replacing spreadsheet-based capital planning with AI-generated
+  property intelligence. The platform produces unit-level as-builts, takeoffs,
+  and interior models, runs renovation ROI and five-year capital plans, and
+  tracks spend and budget variance in real time across apartment portfolios.
+  Tailorbird ingests PCAs and property documents, integrates with major
+  property-management ERPs including Yardi, RealPage, Entrata, and MRI via
+  custom APIs and ELTs, and maintains SOC 2 Type II compliance. Founded in 2020
+  and based in Princeton, New Jersey, it serves 28 of the NMHC Top 50 operators
+  and manages more than $2B in annual CapEx across over one million mapped
+  units. It is a Bloomberg Beta portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/tailorbird/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +31,25 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Real Estate
+- PropTech
+- Multifamily
+- Construction
+- Property Management
+- CapEx
+- Renovation
+- Asset Management
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +57,17 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tailorbird-domain-security.yml
 - type: Website
-  url: https://www.tailorbirdhomes.com/
+  url: https://www.tailorbird.com/
+- type: Blog
+  url: https://www.tailorbird.com/blog
+- type: SignUp
+  url: https://go.tailorbird.com/learn-more
+- type: Login
+  url: https://app.tailorbird.com/
+- type: PrivacyPolicy
+  url: https://www.tailorbird.com/privacy-policy
+- type: TermsOfService
+  url: https://www.tailorbird.com/terms-conditions

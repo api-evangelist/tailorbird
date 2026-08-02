@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of Tailorbird public hosts
+note: >-
+  No /.well-known/ discovery documents are published. Tailorbird exposes no
+  public API, developer portal, or OAuth/OIDC surface; product integrations are
+  private enterprise APIs/ELTs. Absence is valid, expected data — no WellKnown
+  scoring pointer is emitted.
+hosts:
+- host: https://www.tailorbird.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+- host: https://app.tailorbird.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 500
